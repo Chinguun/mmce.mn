@@ -1,50 +1,82 @@
-<!DOCTYPE HTML>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>MMCE by Chinguun</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pass Solution LLC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="font-sans antialiased">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Pass Solution LLC</h1>
+      <nav class="space-x-4">
+        <a href="#home" class="hover:text-yellow-400">Home</a>
+        <a href="#about" class="hover:text-yellow-400">About</a>
+        <a href="#services" class="hover:text-yellow-400">Services</a>
+        <a href="#contact" class="hover:text-yellow-400">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<body class="is-preload">
-	<div id="wrapper">
-		<div id="bg"></div>
-		<div id="overlay"></div>
-		<div id="main">
+  <!-- Hero Section -->
+  <section id="home" class="relative bg-yellow-100 py-16 text-center">
+    <img src="https://source.unsplash.com/1600x600/?business,teamwork" alt="Hero" class="absolute inset-0 w-full h-full object-cover opacity-30">
+    <div class="relative z-10">
+      <h2 class="text-4xl font-bold mb-4">Together We Strive for Perfect Performance</h2>
+      <p class="text-lg">Innovative solutions in media, mining, machinery and more since 2018.</p>
+    </div>
+  </section>
 
-			<!-- Header -->
-			<header id="header">
-				<h1>Chinguun Bold</h1>
-				<p>System analyst &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
-				<nav>
-					<ul>
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</nav>
-			</header>
+  <!-- About Us -->
+  <section id="about" class="py-12 px-4 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4 text-center">About Us</h2>
+    <p class="mb-4">Founded in 2018, "Pass Solution" LLC is active in television, documentaries, advertising, mining, IT services, and foreign trade. We prioritize citizen needs and long-term value.</p>
+    <p class="mb-4"><strong>Vision:</strong> To be a sector leader and socially responsible company through sustainable, collaborative, and solution-oriented work.</p>
+    <p class="mb-4"><strong>Mission:</strong> Promote safety, ethics, and quality while building strong client relationships.</p>
+    <p><strong>Core Values:</strong> Responsibility, Honesty, Performance, Adaptability, Quality.</p>
+  </section>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<span class="copyright">&copy; MMCE. Design: <a href="https://html5up.net">HTML5 UP</a>.</span>
-			</footer>
+  <!-- Services -->
+  <section id="services" class="bg-gray-100 py-12 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <img src="https://source.unsplash.com/400x250/?shopping,online" alt="Online Store" class="rounded mb-2">
+          <h3 class="text-xl font-semibold">Foreign Trade & Online Store</h3>
+          <p>We import Korean beauty products, vitamins, branded fashion, food, and capsule coffee machines. Visit <a href="https://dolcegustomongolia.company.site/" class="text-blue-600 underline">our store</a>.</p>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/400x250/?film,production" alt="Media" class="rounded mb-2">
+          <h3 class="text-xl font-semibold">Media Production</h3>
+          <p>Video content for media, films, and advertising projects by experienced artists.</p>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/400x250/?mining,machinery" alt="Mining" class="rounded mb-2">
+          <h3 class="text-xl font-semibold">Heavy Machinery & Mining</h3>
+          <p>Operations since 2018 in mining, stripping, transportation, and road construction. Environmentally friendly equipment.</p>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/400x250/?spareparts,tools" alt="Spare Parts" class="rounded mb-2">
+          <h3 class="text-xl font-semibold">Spare Parts Store</h3>
+          <p>Direct supply of heavy machinery parts from China since 2022.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-		</div>
-	</div>
-	<script>
-		window.onload = function () { document.body.classList.remove('is-preload'); }
-		window.ontouchmove = function () { return false; }
-		window.onorientationchange = function () { document.body.scrollTop = 0; }
-	</script>
+  <!-- Contact -->
+  <section id="contact" class="py-12 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+    <p class="mb-2">Email: <a href="mailto:info@passsolution.mn" class="text-blue-600 underline">info@passsolution.mn</a></p>
+    <p>Phone: +976-XXXX-XXXX</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    &copy; 2025 Pass Solution LLC. All rights reserved.
+  </footer>
 </body>
-
 </html>
