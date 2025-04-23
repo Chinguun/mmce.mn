@@ -7,55 +7,52 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="font-sans antialiased">
+<body class="font-sans antialiased bg-gray-50 text-gray-800">
   <!-- Header -->
-  <header class="bg-gray-800 text-white p-4">
+  <header class="bg-gray-900 text-white p-4 sticky top-0 z-50 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-4">
         <img src="assets/css/images/logo.png" alt="Pass Solution Logo" class="w-12 h-12">
         <h1 class="text-xl font-bold">Pass Solution LLC</h1>
       </div>
-      <nav class="space-x-4">
-        <a href="#home" class="hover:text-yellow-400">Home</a>
-        <a href="#about" class="hover:text-yellow-400">About</a>
-        <a href="#services" class="hover:text-yellow-400">Services</a>
-        <a href="#contact" class="hover:text-yellow-400">Contact</a>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-yellow-400 transition">Home</a>
+        <a href="#about" class="hover:text-yellow-400 transition">About</a>
+        <a href="#services" class="hover:text-yellow-400 transition">Services</a>
+        <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="relative bg-yellow-100 py-16 text-center">
-    <img src="assets/css/images/bg.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover opacity-30">
-    <div class="relative z-10">
-      <h2 class="text-4xl font-bold mb-4">Together We Strive for Perfect Performance</h2>
-      <p class="text-lg">Innovative solutions in media, mining, machinery and more since 2018.</p>
+  <section id="home" class="relative bg-gradient-to-r from-yellow-400 to-yellow-600 text-white py-20 text-center">
+    <div class="container mx-auto relative z-10">
+      <h2 class="text-5xl font-extrabold mb-4">Together We Strive for Perfect Performance</h2>
+      <p class="text-lg">Innovative solutions in media, mining, machinery, and more since 2018.</p>
     </div>
+    <img src="assets/css/images/bg.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover opacity-20">
   </section>
 
   <!-- About Us -->
-  <section id="about" class="py-12 px-4 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold mb-8 text-center">About Us</h2>
-    <p class="mb-6 text-center max-w-3xl mx-auto">Founded in 2018, "Pass Solution" LLC is active in television, documentaries, advertising, mining, IT services, and foreign trade. We prioritize citizen needs and long-term value.</p>
-
+  <section id="about" class="py-16 px-4 max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">About Us</h2>
+    <p class="mb-8 text-center max-w-3xl mx-auto text-gray-600">Founded in 2018, "Pass Solution" LLC is active in television, documentaries, advertising, mining, IT services, and foreign trade. We prioritize citizen needs and long-term value.</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-lg shadow p-6 text-center">
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
         <div class="flex justify-center items-center w-16 h-16 mx-auto mb-4 rounded-full bg-yellow-100">
           <i data-lucide="target" class="w-8 h-8 text-yellow-600"></i>
         </div>
         <h3 class="text-xl font-semibold mb-2 text-yellow-600">Vision</h3>
         <p class="text-gray-700">To be a sector leader and socially responsible company through sustainable, collaborative, and solution-oriented work.</p>
       </div>
-
-      <div class="bg-white rounded-lg shadow p-6 text-center">
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
         <div class="flex justify-center items-center w-16 h-16 mx-auto mb-4 rounded-full bg-yellow-100">
           <i data-lucide="handshake" class="w-8 h-8 text-yellow-600"></i>
         </div>
         <h3 class="text-xl font-semibold mb-2 text-yellow-600">Mission</h3>
         <p class="text-gray-700">Promote safety, ethics, and quality while building strong client relationships for long-term stability.</p>
       </div>
-
-      <div class="bg-white rounded-lg shadow p-6 text-center">
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
         <div class="flex justify-center items-center w-16 h-16 mx-auto mb-4 rounded-full bg-yellow-100">
           <i data-lucide="heart" class="w-8 h-8 text-yellow-600"></i>
         </div>
@@ -72,47 +69,121 @@
   </section>
 
   <!-- Services -->
-  <section id="services" class="bg-gray-100 py-12 px-4">
+  <section id="services" class="bg-gray-100 py-16 px-4">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+      <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">Our Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-            <img src="assets/css/images/onlinestore.jpg" alt="Online Store" class="rounded mb-2" style="width: 400px; height: 250px;">
-          <h3 class="text-xl font-semibold">Foreign Trade & Online Store</h3>
-          <p>We import Korean beauty products, vitamins, branded fashion, food, and capsule coffee machines. Visit <a href="https://dolcegustomongolia.company.site/" class="text-blue-600 underline">our store</a>.</p>
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+          <img src="assets/css/images/onlinestore.jpg" alt="Online Store" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Foreign Trade & Online Store</h3>
+          <p class="text-gray-600">We import Korean beauty products, vitamins, branded fashion, food, and capsule coffee machines. Visit <a href="https://dolcegustomongolia.company.site/" target="_blank" class="text-blue-600 underline">our store</a>.</p>
         </div>
-        <div>
-          <img src="assets/css/images/media.jpg" alt="Media" class="rounded mb-2" style="width: 400px; height: 250px;">
-          <h3 class="text-xl font-semibold">Media Production</h3>
-          <p>Video content for media, films, and advertising projects by experienced artists.</p>
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+          <img src="assets/css/images/media.jpg" alt="Media" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Media Production</h3>
+            <p class="text-gray-600">Video content for media, films, and advertising projects by experienced artists. Visit us on <a href="https://www.facebook.com/OchirFilm" target="_blank" class="text-blue-600 underline">Facebook</a>.</p>
         </div>
-        <div>
-          <img src="assets/css/images/machinery.jpg" alt="Mining" class="rounded mb-2" style="width: 400px; height: 250px;">
-          <h3 class="text-xl font-semibold">Heavy Machinery & Mining</h3>
-          <p>Operations since 2018 in mining, stripping, transportation, and road construction. Environmentally friendly equipment.</p>
+        <!-- Heavy Machinery & Mining Card -->
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+          <img src="assets/css/images/machinery.jpg" alt="Mining" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Heavy Machinery & Mining</h3>
+          <p class="text-gray-600">Operations since 2018 in mining, stripping, transportation, and road construction. Environmentally friendly equipment.</p>
+          <button onclick="openModal()" class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">
+            Learn More
+          </button>
         </div>
-        <div>
-          <img src="assets/css/images/spareparts.jpeg" alt="Spare Parts" class="rounded mb-2" style="width: 400px; height: 250px;">
-          <h3 class="text-xl font-semibold">Spare Parts Store</h3>
-          <p>Direct supply of heavy machinery parts from China since 2022.</p>
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+          <img src="assets/css/images/spareparts.jpeg" alt="Spare Parts" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Spare Parts Store</h3>
+          <p class="text-gray-600">Direct supply of heavy machinery parts from China since 2022.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden transition-opacity duration-300">
+    <div class="bg-white rounded-lg shadow-2xl max-w-4xl w-full p-8 relative transform scale-95 transition-transform duration-300">
+      <!-- Close Button -->
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-2xl">
+        ✖
+      </button>
+
+      <!-- Modal Image -->
+      <div class="mb-6">
+        <img src="assets/css/images/mining-banner.jpg" alt="Heavy Machinery & Mining" class="rounded-t-lg w-full h-48 object-cover">
+      </div>
+
+      <!-- Modal Header -->
+      <div class="text-center mb-6">
+        <h2 class="text-3xl font-extrabold text-gray-800">Heavy Machinery & Mining</h2>
+        <p class="text-gray-500">Discover our projects and resources</p>
+      </div>
+
+      <!-- Modal Content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Project Timeline -->
+        <div>
+          <h3 class="text-xl font-semibold text-yellow-600 mb-4">Project Timeline</h3>
+          <ul class="list-disc pl-5 text-gray-700 space-y-2">
+            <li>Since 2018, engaged in gold placer mining operations in Bombogor soum, Bayankhongor aimag</li>
+            <li>In 2020, initiated brick clay mining activities with “NK” LLC in Nalaikh district</li>
+            <li>In 2020-2021, provided technical services as a subcontractor for the Altanbulag border free zone road construction in Selenge aimag, in collaboration with “Bigbold Construction” LLC</li>
+            <li>In 2021, supported the Tavan Tolgoi-Gashuun Sukhait road construction project as a subcontractor for “Ondur Altayin Zam” LLC</li>
+            <li>From 2019-2022, conducted coal mining and stripping operations for “Moncoal Petromining” LLC</li>
+            <li>Since 2022, actively providing stripping services</li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <h3 class="text-xl font-semibold text-yellow-600 mb-4">Our Resources</h3>
+          <ul class="list-disc pl-5 text-gray-700 space-y-2">
+            <li>Caterpillar 385C model excavator with a 5.6m³ bucket (1 pc)</li>
+            <li>Caterpillar 345D model excavator with a 3.2m³ bucket (1 pc)</li>
+            <li>Doosan DX480LCA model excavators with 3.2m³ buckets (3 pcs)</li>
+            <li>Hyundai 520LC9 model excavators with 3.2m³ buckets (3 pcs)</li>
+            <li>HOWO371 trucks with a 60t capacity (3 pcs)</li>
+            <li>Tonly trucks with a 60t capacity (2 pcs)</li>
+            <li>MT86 trucks with a 60t capacity (9 pcs)</li>
+            <li>NordBenz Howo Sonsmal trucks with a 30t capacity (8 pcs)</li>
+            <li>Liugong 50c model wheel loaders (2 pcs)</li>
+            <li>Nordbenz Beiben truck with a 50t capacity (1 pc)</li>
+            <li>Trailer (1 pc)</li>
+            <li>Road irrigation-equipped trailer (1 pc)</li>
+            <li>Mighty2 model crane lift truck for maintenance (1 pc)</li>
+            <li>Starex, Porter, and Landcruiser100 model vehicles for domestic service (multiple pcs)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Contact -->
-  <section id="contact" class="py-12 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-    <p class="mb-2">Email: <a href="mailto:info@passsolution.mn" class="text-blue-600 underline">info@passsolution.mn</a></p>
-    <p>Phone: +976-XXXX-XXXX</p>
+  <section id="contact" class="py-16 px-4 text-center bg-white">
+    <h2 class="text-4xl font-bold mb-4 text-gray-800">Contact Us</h2>
+    <p class="mb-2 text-gray-600">Email: <a href="mailto:info@passsolution.mn" class="text-blue-600 underline">info@passsolution.mn</a></p>
+    <p class="text-gray-600">Phone: +976-XXXX-XXXX</p>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-4">
-    &copy; 2025 Pass Solution LLC. All rights reserved.
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 Pass Solution LLC. All rights reserved.</p>
   </footer>
   <script>
     lucide.createIcons();
+
+    function openModal() {
+      const modal = document.getElementById('modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('opacity-100', 'scale-100');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('opacity-100', 'scale-100');
+    }
   </script>
 </body>
 </html>
